@@ -1,0 +1,59 @@
+
+site_name: DAT Systems
+site_description: DAT Systems – Project documentation and resources
+
+theme:
+  name: material
+  logo: assets/DAT-SYSTEMS.jpg
+  favicon: assets/favicon.ico
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      primary: blue
+      accent: teal
+    - scheme: slate
+      primary: blue
+      accent: teal
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - styles/extra.css
+
+extra_javascript:
+  - scripts/custom.js
+
+nav:
+  - Home: index.md
+  - Download: download.md
+  - Docs:
+      - Overview: overview.md
+      - Background: background.md
+      - Hardware: hardware.md
+      - Features: features.md
+      - UI/UX: uiux.md
+      - Analytics: analytics.md
+      - Roadmap: roadmap.md
+      - Annexure: annexure.md
+  - Project Info: project-info.md
